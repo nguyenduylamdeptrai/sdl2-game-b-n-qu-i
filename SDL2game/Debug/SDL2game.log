@@ -1,4 +1,4 @@
-﻿Build started 19-Apr-24 8:59:05 PM.
+﻿Build started 20-Apr-24 1:51:15 PM.
      1>Project "C:\Users\duyla\OneDrive\Documents\Visual Studio 2012\Projects\SDL2game\SDL2game\SDL2game.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\SDL2game.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
@@ -17,32 +17,33 @@
      1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(146): warning C4244: 'argument' : conversion from 'int' to 'const float', possible loss of data
      1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(196): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
      1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(204): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(250): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
      1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(251): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(252): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(358): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(372): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(394): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(395): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(431): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(432): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(500): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(505): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(525): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(526): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(564): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(565): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(639): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(646): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(661): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(677): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(678): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(713): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(714): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(775): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(797): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(798): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(838): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(262): warning C4101: 'event1' : unreferenced local variable
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(363): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(377): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(399): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(400): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(436): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(437): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(506): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(511): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(531): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(532): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(570): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(571): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(645): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(652): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(667): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(683): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(684): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(719): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(720): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(782): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(804): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(805): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(835): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(836): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
+     1>c:\users\duyla\onedrive\documents\visual studio 2012\projects\sdl2game\sdl2game\main.cpp(916): warning C4018: '<' : signed/unsigned mismatch
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\duyla\OneDrive\Documents\Visual Studio 2012\Projects\SDL2game\Debug\SDL2game.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib SDL2_mixer.lib SDL2_ttf.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\duyla\OneDrive\Documents\Visual Studio 2012\Projects\SDL2game\Debug\SDL2game.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\duyla\OneDrive\Documents\Visual Studio 2012\Projects\SDL2game\Debug\SDL2game.lib" /MACHINE:X86 Debug\BaseObject.obj
          Debug\BossObject.obj
@@ -63,4 +64,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.85
+Time Elapsed 00:00:02.41

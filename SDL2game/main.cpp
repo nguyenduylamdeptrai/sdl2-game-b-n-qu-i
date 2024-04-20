@@ -189,13 +189,13 @@ int main(int argc, char* argv[])
 
 
 	PlayerPower player_power;
-	player_power.Init(g_screen);
+	
 
 	PlayerMoney player_money;
 	player_money.Init(g_screen);
 	player_money.SetPos(SCREEN_WIDTH*0.5 -300, 8);
 
-	std::vector<ThreatsObject*> threats_list = MakeThreadList();
+	
 
 	//Boss-Threat
 	BossObject bossObject;
@@ -219,8 +219,7 @@ int main(int argc, char* argv[])
 	if(!mRet) return -1;
 	exp_main.set_clip();
 
-	int num_die = 0;
-	int num_boss = 0;
+	
 
 	//Time text
 	TextObject time_game;
@@ -230,7 +229,7 @@ int main(int argc, char* argv[])
 	TextObject mark_game;
 	mark_game.SetColor(TextObject::WHITE_TEXT);
 
-	UINT mark_value = 0;
+	
 
 	TextObject money_game;
 	money_game.SetColor(TextObject::WHITE_TEXT);
@@ -256,12 +255,17 @@ int main(int argc, char* argv[])
 	//ContinueButton[1].SetRect(SCREEN_WIDTH/2 - Button.w/2, SCREEN_HEIGHT/2 - Button.h*1.5);
 	int MousePosX = 0;
 	int MousePosY = 0;
-	//bool play = false;
-	//while(!play){
-	
-	SDL_Event event1; 
-	bool is_quit = false;
+	bool play = false;
 	bool menu_quit = false;
+	while(!play){
+	p_player.set(0,0);
+	player_power.Init(g_screen);
+	std::vector<ThreatsObject*> threats_list = MakeThreadList();
+	int num_die = 0;
+	int num_boss = 0;
+	UINT mark_value = 0;
+	bool is_quit = false;
+	
 	bool over_quit = false;
 	while (!menu_quit)
 	{
@@ -286,7 +290,7 @@ int main(int argc, char* argv[])
 					{
     					menu_quit = true;
 						is_quit = true;
-						//play = true;
+						play = true;
 					}
 				}
 			}
@@ -324,6 +328,7 @@ int main(int argc, char* argv[])
 
 			p_player.HandelInputAction(g_event,g_screen,g_sound_bullet);
 		}
+		
 		
 	SDL_SetRenderDrawColor(g_screen, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR);
 	SDL_RenderClear(g_screen);
@@ -459,6 +464,7 @@ int main(int argc, char* argv[])
 					{
 						i_quit = true;
 						is_quit = true;
+						play = true;
 						
 					}
 				}
@@ -546,7 +552,7 @@ int main(int argc, char* argv[])
 	 Uint32 val_time = 300 - time_val;
 	 if (val_time <= 0)
 	 {
-		 bool i_quit = false;
+	 bool i_quit = false;
 	SDL_Event event;
 	BaseObject GameOverMenu;
 	BaseObject MainMenuButton[2];
@@ -592,7 +598,7 @@ int main(int argc, char* argv[])
 					{
 						i_quit = true;
 						is_quit = true;
-						
+						play = true;
 					}
 				}
 			}
@@ -741,6 +747,7 @@ int main(int argc, char* argv[])
 					{
 						i_quit = true;
 						is_quit = true;
+						play = true;
 						
 					}
 				}
@@ -805,14 +812,85 @@ int main(int argc, char* argv[])
 						 p_player.RemoveBullet(r);
 						 Mix_PlayChannel(-1, g_sound_exp[0], 0);
 						 num_boss++;
-						 if(num_boss<3){
+						 if(num_boss<30){
 							 continue;
 						 }
 						 else{
-							 
-				 
+							 boss_threat->Free();
+							 bool win_quit = false;
+	SDL_Event event;
+	BaseObject WinMenu;
+	BaseObject MainMenuButton[2];
+	BaseObject ExitButton[2];
+	//TTF_Font* font_time = NULL;
+	WinMenu.LoadImg("img//win.png",g_screen);	
+	MainMenuButton[0].LoadImg("img//new.png",g_screen);
+	MainMenuButton[1].LoadImg("img//new.png",g_screen);
+	ExitButton[0].LoadImg("img//exit2.png",g_screen);
+	ExitButton[1].LoadImg("img//exit2.png",g_screen);
+	SDL_Rect Button = MainMenuButton[0].GetRect();
+	MainMenuButton[0].SetRect(SCREEN_WIDTH/2 - Button.w/2,SCREEN_HEIGHT/2 - 100);
+	MainMenuButton[1].SetRect(SCREEN_WIDTH/2 - Button.w/2,SCREEN_HEIGHT/2 - 100);
+	Button = ExitButton[0].GetRect();
+	ExitButton[0].SetRect(SCREEN_WIDTH/2 - Button.w/2,SCREEN_HEIGHT/2 + Button.h*1.5 - 125);
+	ExitButton[1].SetRect(SCREEN_WIDTH/2 - Button.w/2,SCREEN_HEIGHT/2 + Button.h*1.5 - 125);
+	int MousePosX1 = 0;
+	int MousePosY1 = 0;	
+	//font_time = TTF_OpenFont("font//dlxfont_.ttf",300);
+	while(!win_quit)
+	{
+		SDL_RenderClear(g_screen);
+	    WinMenu.Render(g_screen,NULL);
+		while(SDL_PollEvent(&event) != 0)
+		{
+
+			if(event.type == SDL_MOUSEMOTION)
+			{
+				MousePosX1 = event.motion.x;
+				MousePosY1 = event.motion.y;
+			}
+			if(event.type == SDL_MOUSEBUTTONDOWN)
+			{
+				if (event.button.button == SDL_BUTTON_LEFT)
+				{
+					if(SDLCommonFunc::CheckMousePos(MousePosX1,MousePosY1,MainMenuButton[0].GetRect()) == true)
+					{
+						win_quit = true;
+						is_quit = true;
+						
+					}
+					if(SDLCommonFunc::CheckMousePos(MousePosX1,MousePosY1,ExitButton[0].GetRect()) == true)
+					{
+						win_quit = true;
+						is_quit = true;
+						play = true;
+						
+					}
+				}
+			}
+		}
+		
+		if(SDLCommonFunc::CheckMousePos(MousePosX1,MousePosY1,MainMenuButton[0].GetRect()) == true)
+		{
+			MainMenuButton[1].Render(g_screen);
+		}
+		else
+		{
+			MainMenuButton[0].Render(g_screen);
+		}
+		if(SDLCommonFunc::CheckMousePos(MousePosX1,MousePosY1,ExitButton[0].GetRect()) == true)
+		{
+			ExitButton[1].Render(g_screen);
+		}
+		else
+		{
+			ExitButton[0].Render(g_screen);
+		}
+		SDL_RenderPresent(g_screen);
+		SDL_Delay(100);
+	}
+	WinMenu.Free();
 						 }
-						 
 				  }
 			 }
 		 }
@@ -834,7 +912,7 @@ int main(int argc, char* argv[])
 	}
 
 	}
-	///}
+	
 	for(int i=0;i<threats_list.size();i++)
 	{
 		ThreatsObject* p_threat = threats_list.at(i);
@@ -845,8 +923,9 @@ int main(int argc, char* argv[])
 		}
 	}
 	threats_list.clear();
-    close();
-
+    
+	}
+	close();
 	return 0;
 }
 

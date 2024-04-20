@@ -15,5 +15,5 @@ Tham khảo và học hỏi về hướng đối tượng và thư viện SDL2 t
 Thư viện sdl2  
 Lớp, hướng đối tượng  
 ## Kết luận  
-Điểm số mà em mong muốn từ 8 - 8.5
+Điểm số mà em mong muốn từ 7-7,5
 Lí do vì đã thiết kế đầy đủ giao diện cơ bản dành cho trò chơi, âm nhạc đa dạng, nhân vật di chuyển mượt ,đồ hoạ bắt mắt,áp dụng kiến thức đã học vào bài làm.
